@@ -4,6 +4,7 @@ import fs from 'fs';
 
 function partTwo(file) {
     const lines = fs.readFileSync(file, "utf-8").trim().split('\r\n');
+    //take off \r - test
     return lines.map((line) => {
         const maxCount = {
             red: 0,
